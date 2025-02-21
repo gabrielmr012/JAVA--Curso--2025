@@ -1,0 +1,16 @@
+Como posso adicionar Conta para pertencer a um cliente -> 
+    IDEIA 1 - { 
+        Como cliente possui um atributo do tipo Conta Corrente eu posso criar uma COntaCorrente e 
+        adicionar-la em cliente como um atributo e depois formatar o 
+        modo de exibição em um toString dentro de cada classe do tipo Conta
+       }
+
+      //método de criar uma nova contacorrente
+       public ContaCorrente criarContaCorrente(){
+        String nome = Banco.listaClientes.get(0).getNome();
+        int numconta = gerarNumConta(0);
+        double saldo = 0.0;
+        ContaCorrente contaCorrente = new ContaCorrente(nome, numconta, saldo);
+        Banco.listaContaCorrente.add(contaCorrente);
+        return contaCorrente;
+    }
