@@ -1,0 +1,31 @@
+- Método para criar gerar uma placa aleátorio
+    
+public static String gerarCodigo(){
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWYXZ0123456789";
+        Random r = new Random();
+        StringBuilder codigo = new StringBuilder();
+    
+        for(int i = 0; i < 6; i++ ){
+            int index = r.nextInt(caracteres.length());
+            codigo.append(caracteres.charAt(index));
+        }
+        return codigo.toString();
+    }
+
+gera uma cadeia de characteres 
+
+------------- EM PRODUÇÃO --------------------
+Criando o Menu
+------------- EM PRODUÇÃO --------------------
+Criar métodos funcionais 
+-ideia seria dentro do método usar um menu ja pronto pra diminuir o tamanho do switch case 
+- criar um método de imprimir os clientes cadastrados (FEITO)
+- cadstrar veículos (FEITO)
+- implementar o método (FEITO)
+- Melhorar a exibição dos objetos de cada Lista(FEITO)
+- Opção de veiculos precisa terminar o resto das funções ("Excluir" e "Alterar Dados")
+- Criar placas Aleatorias e add no atributo de placa, mas ao terminar de cadastrar, precisa informar o numero da placa(FEITO)
+junto com "Cadastrado com Sucesso!"(FEITO)
+- Método de Remover Veículos (FEITO)
+- Alterar Dados Do Veículos
+- reutilizar os metodos de remover veiculo nos clientes e em Vendedores
